@@ -30,6 +30,21 @@ export type Revenue = {
   month: string;
   revenue: number;
 };
+export interface Data  {
+  value: {
+    rows: { count: number }[];
+  };
+}
+
+export interface Data1  {
+  value: {
+    rows: {
+      paid: string;
+      pending: string
+}[];
+  };
+}
+
 
 export type LatestInvoice = {
   id: string;
